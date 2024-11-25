@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW 30.10.24</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+   
+    <div class="container">
+        <h2>Выберите курсы для обучения</h2>
+
+        <form class="courseForm">
+            <label>Курс Front-End:</label>
+            <select name="" class="course">
+                <option value="0">-- Выберите курс --</option>
+                <option value="1000">HTML - $1000</option>
+                <option value="2500">JavaScript - $2500</option>
+                <option value="3600">AI - $3600</option>
+            </select>
+
+            <label>Курс Back-End:</label>
+            <select name="" class="course">
+                <option value="0">-- Выберите курс --</option>
+                <option value="2200">Python - $2200</option>
+                <option value="2600">PHP - $2600</option>
+                <option value="3100">Java - $3100</option>
+            </select>
+
+            <label>Курс Desing:</label>
+            <select name="" class="course">
+                <option value="0">-- Выберите курс --</option>
+                <option value="2200">Figma - $2200</option>
+                <option value="1800">Photoshop - $1800</option>
+                <option value="2000">Illustrator - $2000</option>
+            </select>
+
+            <label>Количество курсов:</label>
+            <input type="number" class="courseCount" min="1" max="9" value="1">
+
+            <button type="button" onclick="buy()">Рассчитать стоимость</button>
+        </form>
+        
+        <p class="total">Общая стоимость: $0</p>
+        <h3 class="result"></h3>
+        
+    </div>    
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
